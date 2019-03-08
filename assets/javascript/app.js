@@ -7,7 +7,10 @@
     $("button").on("click", function() {    //add a reset  or clear function here  
        
        var topicName = $(this).attr("data-name");
-       var queryURL =  "http://api.giphy.com/v1/gifs/search?q=" + topicName + "&api_key=dc6zaTOxFJmzC&limit=10";     
+       // var queryURL =  "http://api.giphy.com/v1/gifs/search?q=" + topicName + "&api_key=dc6zaTOxFJmzC&limit=10"; 
+       // var queryURL =  "https://api.giphy.com/v1/gifs/search?q=" + topicName + "&api_key=NJb4yFuuFG6N1EMEiOqDZOaiFSxHgbbx=10"; 
+      
+       var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=NJb4yFuuFG6N1EMEiOqDZOaiFSxHgbbx&q="+ topicName + "&limit=10&offset=0&rating=G&lang=en";
 
           $.ajax({
             url: queryURL,
